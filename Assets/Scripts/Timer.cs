@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 public class Timer : MonoBehaviour
@@ -17,7 +15,6 @@ public class Timer : MonoBehaviour
         timerIsRunning = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (timerIsRunning)
@@ -41,6 +38,5 @@ public class Timer : MonoBehaviour
         float minutes = Mathf.FloorToInt(timeToDisplay / 60); 
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
         timerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-
     }
 }
